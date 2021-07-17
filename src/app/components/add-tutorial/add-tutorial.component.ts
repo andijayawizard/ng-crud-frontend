@@ -11,6 +11,8 @@ export class AddTutorialComponent implements OnInit {
   tutorial: Tutorial = {
     title: '',
     description: '',
+    author: '',
+    price: '',
     published: false
   };
   submitted = false;
@@ -23,7 +25,9 @@ export class AddTutorialComponent implements OnInit {
   saveTutorial(): void {
     const data = {
       title: this.tutorial.title,
-      description: this.tutorial.description
+      description: this.tutorial.description,
+      author: this.tutorial.author,
+      price: this.tutorial.price,
     };
 
     this.tutorialService.create(data)
@@ -42,6 +46,8 @@ export class AddTutorialComponent implements OnInit {
     this.tutorial = {
       title: '',
       description: '',
+      author: '',
+      price: '',
       published: false
     };
   }

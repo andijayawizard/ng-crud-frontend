@@ -12,6 +12,8 @@ export class TutorialDetailsComponent implements OnInit {
   currentTutorial: Tutorial = {
     title: '',
     description: '',
+    author: '',
+    price: '',
     published: false
   };
   message = '';
@@ -42,6 +44,8 @@ export class TutorialDetailsComponent implements OnInit {
     const data = {
       title: this.currentTutorial.title,
       description: this.currentTutorial.description,
+      author: this.currentTutorial.author,
+      price: this.currentTutorial.price,
       published: status
     };
 
