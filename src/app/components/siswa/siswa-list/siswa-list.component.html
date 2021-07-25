@@ -19,7 +19,12 @@
     </div>
   </div>
   <div class="col-md-6">
-    <h4>Siswa List</h4>
+    <h4>
+      Siswa List
+      <a class="badge- badge-warning-" routerLink="/siswa-add">
+        Add Siswa
+      </a>
+    </h4>
     <ul class="list-group">
       <li
         class="list-group-item"
@@ -50,7 +55,7 @@
         {{ currentSiswa.isActive ? "Published" : "Pending" }}
       </div>
 
-      <a class="badge badge-warning" routerLink="/tutorials/{{ currentSiswa.id }}">
+      <a class="badge badge-warning" routerLink="/siswa/{{ currentSiswa.id }}">
         Edit
       </a>
     </div>
