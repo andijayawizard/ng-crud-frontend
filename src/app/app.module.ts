@@ -11,6 +11,9 @@ import { TutorialsListComponent } from './components/tutorials-list/tutorials-li
 import { CustomersListComponent } from './components/customers/customers-list/customers-list.component';
 import { CustomersAddComponent } from './components/customers/customers-add/customers-add.component';
 import { CustomersDetailComponent } from './components/customers/customers-detail/customers-detail.component';
+import { SiswaListComponent } from './components/siswa/siswa-list/siswa-list.component';
+import { SiswaAddComponent } from './components/siswa/siswa-add/siswa-add.component';
+import { SiswaDetailComponent } from './components/siswa/siswa-detail/siswa-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { CustomersDetailComponent } from './components/customers/customers-detai
     TutorialsListComponent,
     CustomersListComponent,
     CustomersAddComponent,
-    CustomersDetailComponent
+    CustomersDetailComponent,
+    SiswaListComponent,
+    SiswaAddComponent,
+    SiswaDetailComponent
   ],
   imports: [
     BrowserModule,
